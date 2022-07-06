@@ -14,8 +14,9 @@ a:hover { color:#EB0D0D;}
 
 
 /* Button CSS */
-.btn { font-size:14px; border-radius:5px;}
+.btn { font-size:14px; border-radius:5px; height: 40px;}
 .btn-primary { background:#FF4C4C; border-color:#FF4C4C; }
+.btn-default {background: rgb(224 231 255 / 20%);border: 1px solid #E0E7FF;}
 .btn-secondary { background:#40424A;}
 .btn-link { color:#F2134F; text-decoration:none; font-size:12px;}
 .btn-success { background-color:#34BF49; border-color:#34BF49;}
@@ -26,7 +27,9 @@ a:hover { color:#EB0D0D;}
 
 
 /* Form css */
-
+.form-control, .form-select{
+    height: 40px;
+}
 /* Dropdown css */
 .dropdown-item.active, .dropdown-item:active { background:#C40000;}
 
@@ -109,7 +112,7 @@ a:hover { color:#EB0D0D;}
 .stats-cards .cards-wrap { display:flex; justify-content:space-between; overflow-x: auto; }
 .stats-cards .scard { padding:20px; margin-right: 10px; border:none; background:#fff; border-radius:10px;}
 .stats-cards .scard .card-text { width:100%; min-width:100px; }
-.stats-cards .scard .card-icon { }
+/* .stats-cards .scard .card-icon { } */
 .stats-cards .scard span { font-weight:500; }
 .stats-cards .scard h3 { font-family: 'Poppins', sans-serif; font-weight:500; line-height:1; color:#C40000; font-weight:600; margin-bottom:0; }
 .stats-cards .scard img { max-width:50px; margin:2px 0; }
@@ -120,10 +123,10 @@ a:hover { color:#EB0D0D;}
 @media screen and (min-width: 768px) {
 .page-wrapper { padding:24px 40px; display:flex; font-family:EuclidFlex; }
 .sidebar { width: 22rem !important; padding:20px; }
-.sidebar .logo { }
+/* .sidebar .logo { } */
 .sidebar .navbar-nav .nav-item { position: relative;}
 .sidebar .navbar-nav .nav-link  {padding-left:30px;}
-.sidebar .navbar-nav .nav-link.active .nav-icon {  }
+/* .sidebar .navbar-nav .nav-link.active .nav-icon {  } */
 .sidebar .navbar-nav .nav-link .nav-icon { position: absolute;left:-5px;top:8px; padding: 6px; border-radius: 5px; background:#F7F6FB;}
 .sidebar .navbar-nav span { display:inline; font-size:16px;}
 .sidebar .navbar-nav span::after{ content: ''; position: absolute; width: 85%; height: 1px; background:rgb(102 102 102 / 10%); right: 0; bottom: -5px;}
@@ -142,7 +145,7 @@ ul.subnav.dropdown-menu.show { animation-name: example; animation-duration: 0.1s
 .page-wrapper #content-wrapper { display:flex; flex-direction:column; width: 100%; padding-left: 40px; overflow-x: hidden;}
 
 .stats-cards .cards-wrap { display:flex; }
-.stats-cards .scard { }
+/* .stats-cards .scard { } */
 .stats-cards .scard span { font-weight:500; }
 .stats-cards .scard h3 { font-family: 'Poppins', sans-serif; font-weight:500; line-height:1; color:#C40000; font-weight:600; margin-bottom:0; }
 .stats-cards .scard img { max-width:50px; margin:2px 0; }
@@ -159,15 +162,15 @@ ul.subnav.dropdown-menu.show { animation-name: example; animation-duration: 0.1s
     
     .page-wrapper #content-wrapper { padding-left:0px}
 
-    .stats-cards .cards-wrap { }
+    /* .stats-cards .cards-wrap { } */
     .stats-cards .scard {  margin-right: 10px; }
 
 }
 
 @media screen and (min-width:1200px) {
     .stats-cards .scard { width:24%; }
-    .stats-cards .cards-wrap { }
-    .stats-cards .scard {   }
+    /* .stats-cards .cards-wrap { } */
+    /* .stats-cards .scard {   } */
 }
 
 
@@ -217,3 +220,31 @@ ul.subnav.dropdown-menu.show { animation-name: example; animation-duration: 0.1s
 .action-btn .btn {  padding: 0.6rem 3rem;font-size: 0.8rem; text-transform: uppercase;}
 .page-body .form-control, .page-body .form-select { font-size:13px; font-weight:500; background-color:rgb(224 231 255 / 20%); color:#2e384d; border-color:#E0E7FF; }
 .admin-box .form-label { font-size:12px; margin-bottom:0.2rem; color:#8C98A9;}
+
+/* Scheduling Screen Css */
+.calendar-area { border-radius: 9px; overflow: hidden; border: 1px solid #E7ECFF; margin-top: 25px; overflow: auto; }
+.nav-action .btn { min-width: 60px; }
+.production-schedule { width: 100%; }
+.production-schedule td { height: 120px; width: calc(100% / 8);min-width: 120px; padding: 0; margin: 0; border: 1px solid #E7ECFF; }
+.days { text-align: center; text-transform: uppercase; background: #F9FAFF; height: 40px; }
+.days th { font-size: 13px; font-weight: 600; }
+.date th { font-size: 9px; text-align: center; font-style: italic; height: 24.5px; border: 1px solid #E7ECFF; background: #F9FAFF; }
+.date .col-red{ background: #FF4C4C; border:0; }
+/* Coordinator-card Css */
+.coordinator-card { background: #ff4c4c; min-width: 150px; min-height: 120px; display: flex; height: 100%; align-items: center; padding: 12px; }
+.info-card label { font-size: 10px; color: rgb(255 255 255 / 80%); font-weight: 500; display: block; }
+.info-card strong { font-size: 15px; color: #fff; margin: 6px 0; }
+.info-card .form-check {padding-left: 16px;margin-bottom: 0;min-height: initial;}
+.info-card .form-check .form-check-input { width: 9px; height: 9px; border-radius: 0; border: 0; margin-left: -16px; }
+.lots td:first-child {border-left: 0;border-right: 0;}
+
+.production-info{background: rgb(224 231 255 / 18%);height: 100%;padding: 12px;display: block;}
+.lot-info span { font-size: 9px; line-height: 17px; font-weight: 500; }
+.lot-info { display: flex; flex-direction: column; margin-bottom: 9px; }
+.dashed { margin: 0; border: 1px dashed #BAC8FC; }
+.lot-count .text-blue { color: #0AAEFF; font-size: 11px; font-weight: 500; }
+@media screen and (max-width:960px){
+    form.calendar-action .row { display: flex; flex-direction: column; }
+    .nav-action {display:flex; justify-content: end;}
+    form.calendar-action .row div { width: 100%; }
+}
