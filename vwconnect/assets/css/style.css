@@ -222,7 +222,7 @@ ul.subnav.dropdown-menu.show { animation-name: example; animation-duration: 0.1s
 .admin-box .form-label { font-size:12px; margin-bottom:0.2rem; color:#8C98A9;}
 
 /* Scheduling Screen Css */
-.calendar-area { border-radius: 9px; overflow: hidden; border: 1px solid #E7ECFF; margin-top: 25px; overflow: auto; }
+.calendar-area { border-radius: 9px; max-height:90vh; border: 1px solid #E7ECFF; margin-top: 25px; overflow: auto; }
 .nav-action .btn { min-width: 60px; }
 .production-schedule { width: 100%; }
 .production-schedule td { height: 120px; width: calc(100% / 8);min-width: 120px; padding: 0; margin: 0; border: 1px solid #E7ECFF; }
@@ -264,8 +264,36 @@ input.check-no:checked + .btn { background: #FF4C4C;}
 .table-responsive.table-outline { border-radius: 9px; border: 1px solid #E7ECFF; margin-top: 25px; overflow: auto; }
 .table-red th { background: #ff4c4c; color: #fff; }
 
+.dropdown-item.lot-info { margin: 0; }
+.lot-count .dropdown-menu { background: #ff4c4c; padding:0; position: relative; }
+/* .lot-count .dropdown-menu:before { content: ''; width: 20px; height: 20px; background: #ff4c4c; z-index: 1; position: absolute; top: -9px; left: 20px; transform: rotate(45deg); } */
+.lot-count .dropdown-menu li{ padding: 6px 16px 0 16px; }
+.lot-count .dropdown-menu a{ color: #fff; padding: 0 0px 6px 0; border-bottom: 1px solid rgb(255 255 255 / 20%); }
+.lot-count .dropdown-menu a:active, .lot-count .dropdown-menu a:focus, .lot-count .dropdown-menu a:hover{ background:transparent; }
+.lot-count .dropdown-menu li:last-child a{ border-bottom: none; }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #0099e5 #dee0ed;
+  }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+    Height: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #dee0ed;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #0099e5;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+  }
 /* Responsive css start */
 @media screen and (max-width:960px){
     form.calendar-action .row { display: flex; flex-direction: column; }
