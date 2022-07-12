@@ -20,16 +20,16 @@ a:hover { color:#EB0D0D;}
 .btn-secondary { background:#40424A;}
 .btn-link { color:#F2134F; text-decoration:none; font-size:12px;}
 .btn-success { background-color:#34BF49; border-color:#34BF49;}
-
-
 /* Button Sizes  */
 
 
-
 /* Form css */
-.form-control, .form-select{
-    height: 40px;
-}
+.form-control, .form-select{ height: 40px; }
+.radio-group { display: flex; background-color: rgb(255 255 255 / 20%); color: #2e384d; border: 1px solid #E0E7FF; height: 40px; padding: 8px; border-radius: 4px; }
+.radio-group .form-check { margin: 0 8px 0px 0; display: inline-flex; align-items: center; }
+.radio-group .form-check-label { font-size: 11px; margin-left: .35rem; margin-top: .15rem; }
+.radio-group .form-check-input[type=radio] { width: 14px; height: 14px; }
+
 /* Dropdown css */
 .dropdown-item.active, .dropdown-item:active { background:#C40000;}
 
@@ -273,28 +273,23 @@ input.check-no:checked + .btn { background: #FF4C4C;}
 .lot-count .dropdown-menu li:last-child a{ border-bottom: none; }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #0099e5 #dee0ed;
-  }
+  * { scrollbar-width: auto; scrollbar-color: #0099e5 #dee0ed; }
+  *::-webkit-scrollbar { width: 7px; Height: 7px; }
+  *::-webkit-scrollbar-track { background: #dee0ed; }
+  *::-webkit-scrollbar-thumb { background-color: #0099e5; border-radius: 10px; border: 0px solid #ffffff; }
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 7px;
-    Height: 7px;
-  }
+/* Change lots community css */
+  .community {background: rgb(247 245 246 / 30%);padding: 32px;border: 1px solid #E7ECFF;border-radius: 9px;margin-top: 25px;}
+  .form-label { font-size: 12px; color: #8C98A9; }
+  .community-step p { font-size: 13px; color: #000; font-weight: 500; font-family:'EuclidFlex', sans-serif; }
+  .community-step .italic { font-style: italic; font-weight: 500;}
+  .community-step-2 { background: #fff; border: 1px solid #E0E7FF; padding: 32px; }
+  .community .table-responsive.table-outline { max-height: 220px; }
 
-  *::-webkit-scrollbar-track {
-    background: #dee0ed;
-  }
+  /* Lots Page Css Start */
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #0099e5;
-    border-radius: 10px;
-    border: 0px solid #ffffff;
-  }
-/* Responsive css start */
+  
+  /* Responsive css start */
 @media screen and (max-width:960px){
     form.calendar-action .row { display: flex; flex-direction: column; }
     .nav-action {display:flex; justify-content: end;}
