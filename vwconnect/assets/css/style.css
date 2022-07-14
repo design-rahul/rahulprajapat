@@ -24,7 +24,7 @@ a:hover { color:#EB0D0D;}
 
 
 /* Form css */
-.form-control, .form-select{ height: 40px; }
+.form-control:not(textarea), .form-select{ height: 40px; }
 .radio-group { display: flex; background-color: rgb(255 255 255 / 20%); color: #2e384d; border: 1px solid #E0E7FF; height: 40px; padding: 8px; border-radius: 4px; }
 .radio-group .form-check { margin: 0 8px 0px 0; display: inline-flex; align-items: center; }
 .radio-group .form-check-label { font-size: 11px; margin-left: .35rem; margin-top: .15rem; }
@@ -287,8 +287,28 @@ input.check-no:checked + .btn { background: #FF4C4C;}
   .community .table-responsive.table-outline { max-height: 220px; }
 
   /* Lots Page Css Start */
+  .admin-box-inner .separator{ border-bottom: solid 1px #E7ECFF;height: 1px; margin: 30px -15px;}
+  .custome-check {display: flex; flex-wrap: nowrap;}
+  .custome-check label{font-size: 10px; margin-left: 5px; white-space: nowrap; }
+  .custome-check .form-check{display: flex;  flex-grow: 1; flex-wrap: nowrap;}
+ 
+  @media screen and (max-width:768px) {
+    .custome-check .form-check{display: flex;  flex-grow: 1; flex-wrap: wrap;}
+}
 
-  
+
+  /* Lots Tabs Css Start */
+.lots-tabs .tab-content{background: rgb(247 245 246 / 29%); padding: 30px 15px; border: solid 1px #E7ECFF;}
+.lots-tabs .nav-tabs{ border-bottom: none;}
+.lots-tabs .nav-tabs .nav-link{border: solid 1px #E7ECFF ; color: #6c757d; }
+.lots-tabs .nav-tabs .nav-link.active{border: solid 1px #E7ECFF ; background: #fdfcfc; border-bottom: none;
+  position: relative; bottom: -1px; z-index: 1;}
+
+
+
+
+
+
   /* Responsive css start */
 @media screen and (max-width:960px){
     form.calendar-action .row { display: flex; flex-direction: column; }
