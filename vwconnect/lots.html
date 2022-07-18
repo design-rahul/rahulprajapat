@@ -418,23 +418,39 @@
                         <div class="lots-tabs">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                            <button class="nav-link " id="blueStack-tab" data-bs-toggle="tab" data-bs-target="#blue-stack" type="button" role="tab" aria-controls="blue-stack" aria-selected="true">Blue Stack</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                            <button class="nav-link active" id="production-tab" data-bs-toggle="tab" data-bs-target="#production" type="button" role="tab" aria-controls="production" aria-selected="false">Production</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                            <button class="nav-link" id="panel-tab" data-bs-toggle="tab" data-bs-target="#panel" type="button" role="tab" aria-controls="panel" aria-selected="false">Panel</button>
                           </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="trench-tab" data-bs-toggle="tab" data-bs-target="#trench" type="button" role="tab" aria-controls="trench" aria-selected="false">Trench</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="gasRiser-tab" data-bs-toggle="tab" data-bs-target="#gasRiser" type="button" role="tab" aria-controls="gasRiser" aria-selected="false">Gas Riser</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="linePull-tab" data-bs-toggle="tab" data-bs-target="#linePull" type="button" role="tab" aria-controls="linePull" aria-selected="false">Line Pull</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="repair-tab" data-bs-toggle="tab" data-bs-target="#repair" type="button" role="tab" aria-controls="repair" aria-selected="false">Repair</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="LotAccLineItem-tab" data-bs-toggle="tab" data-bs-target="#LotAccLineItem" type="button" role="tab" aria-controls="LotAccLineItem" aria-selected="false">Lot Acc Line Item</button>
+                          </li>
+                       
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                          <div class="tab-pane fade " id="blue-stack" role="tabpanel" aria-labelledby="blueStack-tab">
 
                             <div class="row">
                               <div class="col col-lg-3 my-1 my-sm-0 ">
                                 <label class="form-label">Date Requested </label>
                               
-                                <div class="input-group ">
+                                <div class="input-group right-side-icon">
                                   <input type="text" class="form-control" placeholder="6 May 2022">
                                   <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-calendar-days"></i></span>
                                 </div>
@@ -540,8 +556,120 @@
                             </div>
 
                           </div>
-                          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                          <div class="tab-pane fade show active" id="production" role="tabpanel" aria-labelledby="production-tab">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12  col-lg-12 col-xl-6">
+                                  <div class="row align-items-end pt-3">
+                                    <div class="col-sm-12 col-md-12   col-lg-4">
+                                      <label class="form-label">Prod. Cleared By Builder</label>
+                                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                              <option selected="">- Select -</option>
+                                              <option value="1">55</option>
+                                              <option value="2">65</option>
+                                              <option value="3">75</option>
+                                          </select>
+                                     </div>
+                                    <div class="col-sm-12 col-md-12  col-lg-4">
+                                      <label class="form-label">Cleared By Name </label>
+                                      <input type="text" class="form-control" name="plan" placeholder="LGI Homes">
+                                    </div>
+                                    <div class="col-sm-12 col-md-12  col-lg-4">
+                                     
+                                        <label class="form-label">Request Schedule Date</label>
+                                      
+                                        <div class="input-group ">
+                                          <input type="text" class="form-control" placeholder="6 May 2022">
+                                          <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-calendar-days"></i></span>
+                                        </div>
+                                     
+                                    </div>
+                                  </div>
+                                  <div class="row mt-4">
+                                    <div class="col-sm-12 col-md-12  col-lg-12">
+                                     
+                                        <label for="exampleFormControlTextarea1" class="form-label">Lot Notes</label>
+                                        <textarea class="form-control bg-white" id="exampleFormControlTextarea1" rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elite dolor sit amet, consectetur adipiscing elite</textarea>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="row mt-4">
+                                    <div class="col-sm-12 col-md-12  col-lg-12">
+                                     
+                                        <label for="exampleFormControlTextarea1" class="form-label">Accounting Invoice Notes</label>
+                                        <textarea class="form-control bg-white" id="exampleFormControlTextarea1" rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elite dolor sit amet, consectetur adipiscing elite</textarea>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12  col-lg-12 col-xl-6">
+                                  <dv class="tab-inner-bg d-block">
+                                    <div class="row">
+                                 
+                                     
+                                      <div class="col  col-lg-6">
+                                       
+                                          <label class="form-label">Stop Prod. Date</label>
+                                        
+                                          <div class="input-group ">
+                                            <input type="text" class="form-control" placeholder="6 May 2022">
+                                            <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-calendar-days"></i></span>
+                                          </div>
+                                       
+                                      </div>
+                                      <div class="col  col-lg-6">
+                                      <label class="form-label">Stop Production Status</label>
+                                    <div class="form-control form-control-sm custome-check">
+                                      
+                                      <div class="mt-2 form-check ">
+                                        <input class="form-check-input mt-0" type="radio" value="" name="lots">
+                                        <label class="form-check-label" for="exampleCheck1" name="">Temporary </label>
+                                      </div>
+                                      <div class="mt-2 form-check ">
+                                        <input class="form-check-input mt-0" type="radio" value="" name="lots">
+                                        <label class="form-check-label" for="exampleCheck1">Permanent </label>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="row mt-4 h-75">
+                                      <div class="col-sm-12 col-md-12  col-lg-12">
+                                       
+                                          <label for="exampleFormControlTextarea1" class="form-label">Stop Production Notes</label>
+                                          <textarea class="form-control bg-light h-75" id="exampleFormControlTextarea1" rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elite dolor sit amet, consectetur adipiscing elite</textarea>
+                                        
+                                      </div>
+                                    </div>
+                                  </dv>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-4">
+                              <div class="col-sm-12 col-md-12 ">
+                                <button type="button" class="btn btn-primary">REMOVE LOT</button>
+                                <button type="button" class="btn btn-outline-success">MASTER LOG</button>
+                                <button type="button" class="btn btn-outline-danger">ACTION ITEMS</button>
+                                <button type="button" class="btn btn-outline-warning">EDIT UTILITY</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="panel" role="tabpanel" aria-labelledby="panel-tab">
+                            klklk;l
+                          </div>
+                          <div class="tab-pane fade" id="trench" role="tabpanel" aria-labelledby="trench-tab">
+                            opoo
+                          </div>
+                          <div class="tab-pane fade" id="gasRiser" role="tabpanel" aria-labelledby="gasRiser-tab">
+                            gasRiser
+                          </div>
+                          <div class="tab-pane fade" id="linePull" role="tabpanel" aria-labelledby="linePull-tab">
+                            linePull
+                          </div>
+                          <div class="tab-pane fade" id="repair" role="tabpanel" aria-labelledby="repair-tab">
+                            Repair
+                          </div>
+                            <div class="tab-pane fade" id="LotAccLineItem" role="tabpanel" aria-labelledby="LotAccLineItem-tab">
+                              LotAccLineItem
+                            </div>
                         </div>
                       </div>
 
