@@ -1,1380 +1,2033 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
     <title>VWConnect System | Login</title>
-    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <script src="https://kit.fontawesome.com/39e7f3197d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
-    
-
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <script
+      src="https://kit.fontawesome.com/39e7f3197d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"
+    />
   </head>
   <body>
     <div class="page-wrapper">
-            <div class="sidebar" id="sidebar-toggle">
-                        <div class="logo">
-                            <img src="assets/img/Logo.png" class="img-fluid" alt="" />
-                        </div>
-                        <nav class="navbar navbar-expand-lg">
-                                <ul class="navbar-nav">
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <!-- <img src="/assets/img/user.svg" class="nav-icon"/> -->
-                                      <i class="fa-regular fa-user nav-icon"></i>
-                                       <span> Administration Menu</span>
-                                    </a>
-                                    <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Builders</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Suppliers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Communities</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Types</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Change Lots Community</a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" href="#">Employees</a>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <!-- <i class="fa-regular fa-user"></i> -->
-                                      <i class="fa-solid fa-gear nav-icon"></i>
-                                       <span> Production Menu</span>
-                                    </a>
-                                    <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Builders</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Suppliers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Communities</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Types</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Change Lots Community</a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" href="#">Employees</a>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fa-solid fa-note-sticky nav-icon"></i>
-                                       <span> Bids & Contracts Menu</span>
-                                    </a>
-                                    <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Builders</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Suppliers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Communities</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Types</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Change Lots Community</a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" href="#">Employees</a>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fa-solid fa-dollar-sign nav-icon"></i>
-                                       <span> Accounting Menu</span>
-                                    </a>
-                                    <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Builders</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Suppliers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Communities</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Types</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Change Lots Community</a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" href="#">Employees</a>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fa-solid fa-shop nav-icon"></i>
-                                       <span>Panel Shop Menu</span>
-                                    </a>
-                                    <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="lots.html">lots</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Suppliers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Communities</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Types</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Change Lots Community</a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" href="#">Employees</a>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fa-solid fa-location-dot nav-icon"></i>
-                                       <span>Address Search form</span>
-                                    </a>
-                                    <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Builders</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Suppliers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Communities</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel Types</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Change Lots Community</a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" href="#">Employees</a>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                          </nav>
-            </div>
+      <div class="sidebar" id="sidebar-toggle">
+        <div class="logo">
+          <img src="assets/img/Logo.png" class="img-fluid" alt="" />
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <!-- <img src="/assets/img/user.svg" class="nav-icon"/> -->
+                <i class="fa-regular fa-user nav-icon"></i>
+                <span> Administration Menu</span>
+              </a>
+              <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Builders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Suppliers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Types</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Change Lots Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Employees</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <!-- <i class="fa-regular fa-user"></i> -->
+                <i class="fa-solid fa-gear nav-icon"></i>
+                <span> Production Menu</span>
+              </a>
+              <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Builders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Suppliers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Types</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Change Lots Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Employees</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-note-sticky nav-icon"></i>
+                <span> Bids & Contracts Menu</span>
+              </a>
+              <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Builders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Suppliers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Types</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Change Lots Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Employees</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-dollar-sign nav-icon"></i>
+                <span> Accounting Menu</span>
+              </a>
+              <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Builders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Suppliers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Types</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Change Lots Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Employees</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-shop nav-icon"></i>
+                <span>Panel Shop Menu</span>
+              </a>
+              <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="lots.html">lots</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Suppliers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Types</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Change Lots Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Employees</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-location-dot nav-icon"></i>
+                <span>Address Search form</span>
+              </a>
+              <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Builders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Suppliers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panel Types</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Change Lots Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Employees</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
+      <div id="content-wrapper">
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4">
+          <!-- Sidebar Toggle (Topbar) -->
+          <button
+            class="btn btn-danger d-sm-none"
+            id="menu-button"
+            type="submit"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="greeting-text d-none d-sm-block">
+            <h6 class="mb-0 fw-bold">Good Day, Allie Grater !</h6>
+            <span>Have a Nice Monday</span>
+          </div>
 
-            <div id="content-wrapper">
-              <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4">
-
-                <!-- Sidebar Toggle (Topbar) -->
-                <button class="btn btn-primary d-sm-none" id="menu-button" type="submit">
-                  <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="greeting-text d-none d-sm-block">
-                    <h6 class="mb-0 fw-bold">Good Day, Allie Grater !</h6>
-                    <span>Have a Nice Monday</span>
-                </div>
-      
-                <!-- Topbar Navbar -->
-                <ul class="navbar-nav ms-auto">
-      
-                  <!-- Nav Item - User Information -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fa-regular fa-bell"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fa-solid fa-gear"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img class="img-profile" src="assets/img/user.jpg" width="30px">
-                      <span class="mr-2 text-black fw-bold d-none d-sm-inline">John Doe</span>
-                    </a>
-                    <!-- Dropdown - User Information -->
-                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                      <a class="dropdown-item" href="#">
-                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Profile
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <i class="fas fa-cog fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Settings
-                      </a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Logout
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </nav>
-
-              <div class="stats-cards mb-4">
-                <div class="cards-wrap">
-                  <div class="scard">
-                    <div class="d-flex">
-                      <div class="card-text">
-                        <h3>120</h3>
-                        <span>Builders</span>
-                      </div>
-                      <div class="card-icon">
-                        <img src="assets/img/job-done.png"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="scard">
-                    <div class="d-flex">
-                      <div class="card-text">
-                        <h3>120</h3>
-                        <span>Builders</span>
-                      </div>
-                      <div class="card-icon">
-                        <img src="assets/img/job-done.png"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="scard">
-                    <div class="d-flex">
-                      <div class="card-text">
-                        <h3>120</h3>
-                        <span>Builders</span>
-                      </div>
-                      <div class="card-icon">
-                        <img src="assets/img/job-done.png"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="scard">
-                    <div class="d-flex">
-                      <div class="card-text">
-                        <h3>120</h3>
-                        <span>Builders</span>
-                      </div>
-                      <div class="card-icon">
-                        <img src="assets/img/job-done.png"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ms-auto">
+            <!-- Nav Item - User Information -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                id="userDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-bell"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                id="userDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="userDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="img-profile"
+                  src="assets/img/user.jpg"
+                  width="30px"
+                />
+                <span class="mr-2 text-black fw-bold d-none d-sm-inline"
+                  >John Doe</span
+                >
+              </a>
+              <!-- Dropdown - User Information -->
+              <div
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="userDropdown"
+              >
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cog fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <div class="dropdown-divider"></div>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#logoutModal"
+                >
+                  <i
+                    class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                  ></i>
+                  Logout
+                </a>
               </div>
+            </li>
+          </ul>
+        </nav>
 
-              <div class="page-body bg-white mb-4">
-                <div class="page-heading">
-                  <h5 class="heading">Employee Details Table</h5>
-                  <button type="button" class="btn btn-primary float-end">ADD NEW RECORD</button>
+        <div class="stats-cards mb-4">
+          <div class="cards-wrap">
+            <div class="scard">
+              <div class="d-flex">
+                <div class="card-text">
+                  <h3>120</h3>
+                  <span>Builders</span>
                 </div>
-
-                <div class="employee-list table-responsive">
-                  <table class="table table-hover table-line" id="table_id">
-                    <thead>
-                      <tr>
-                        <th scope="col">Emp Type</th>
-                        <th scope="col">First Name</th>
-                        <th scope="col">Last Name</th>
-                        <th scope="col">User ID</th>
-                        <th scope="col">Cell Phone #1</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Database version</th>
-                        <th scope="col">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-danger">Admin</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <button class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-trash pe-2"></i>Remove</button>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-danger">Admin</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-danger">Admin</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-danger">Admin</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <span class="badge text-bg-success">Office</span>
-                        </td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>
-                          <div class="dropdown-center action">
-                            <a class="link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-regular fa-eye pe-2"></i>Minimize</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-pen pe-2"></i>Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"><i class="fa-solid fa-trash pe-2"></i>Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="card-icon">
+                  <img src="assets/img/job-done.png" />
                 </div>
               </div>
             </div>
+            <div class="scard">
+              <div class="d-flex">
+                <div class="card-text">
+                  <h3>120</h3>
+                  <span>Builders</span>
+                </div>
+                <div class="card-icon">
+                  <img src="assets/img/job-done.png" />
+                </div>
+              </div>
+            </div>
+            <div class="scard">
+              <div class="d-flex">
+                <div class="card-text">
+                  <h3>120</h3>
+                  <span>Builders</span>
+                </div>
+                <div class="card-icon">
+                  <img src="assets/img/job-done.png" />
+                </div>
+              </div>
+            </div>
+            <div class="scard">
+              <div class="d-flex">
+                <div class="card-text">
+                  <h3>120</h3>
+                  <span>Builders</span>
+                </div>
+                <div class="card-icon">
+                  <img src="assets/img/job-done.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-body bg-white mb-4">
+          <div class="page-heading">
+            <h5 class="heading">Employee Details Table</h5>
+            <button type="button" class="btn btn-danger float-end">
+              ADD NEW RECORD
+            </button>
+          </div>
+
+          <div class="employee-list table-responsive">
+            <table class="table table-hover table-line" id="table_id">
+              <thead>
+                <tr>
+                  <th scope="col">Emp Type</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">User ID</th>
+                  <th scope="col">Cell Phone #1</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Database version</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-danger">Admin</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <button
+                            class="dropdown-item"
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                          >
+                            <i class="fa-solid fa-trash pe-2"></i>Remove
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-danger">Admin</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-danger">Admin</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-danger">Admin</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <span class="badge text-bg-success">Office</span>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <div class="dropdown-center action">
+                      <a
+                        class="link-secondary"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen pe-2"></i>Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-trash pe-2"></i>Remove</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal  -->
-    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header border-0">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <h4 class="text-center">
             <i class="fa-solid fa-trash-can trash-can"></i>
-          </h4>              
+          </h4>
           <div class="modal-body">
-            <h5 class="text-center">Are you sure you want to remove this record 
-              from the table ?</h5>
+            <h5 class="text-center">
+              Are you sure you want to remove this record from the table ?
+            </h5>
           </div>
           <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-primary">Yes, Delete it !</button>
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Go Back</button>
+            <button type="button" class="btn btn-danger">
+              Yes, Delete it !
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Go Back
+            </button>
           </div>
         </div>
       </div>
@@ -1382,12 +2035,16 @@
 
     <!-- Modal -->
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"
+    ></script>
     <!-- <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script> -->
     <script src="assets/js/script.js"></script>
   </body>
