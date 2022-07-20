@@ -20,10 +20,25 @@ a:hover { color:#EB0D0D;}
 .input-group.right-side-icon .input-group-text{ border-left: none;}
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: 0px;}
-  *:focus, *:active { outline: none !important; box-shadow: none !important;}
+*:focus, *:active { outline: none !important; box-shadow: none !important;}
+.form-check-input[type*="checkbox"]:checked {background-color: #FF4C4C;border-color: #FF4C4C;}
+.form-check-label{ font-size: 13px;}
 
-  .form-check-input[type*="checkbox"]:checked {background-color: #FF4C4C;border-color: #FF4C4C;}
-  .form-check-label{ font-size: 13px;}
+/*common css*/
+.italic-txt{
+  font-style: italic;
+  font-weight: 100;
+  font-style: 13px;
+}
+.text-danger{
+  color: #FF4C4C!important;
+}
+.text-success {
+  color: #34BF49!important;
+}
+.fa-circle-plus{
+   cursor: pointer;
+}
 
 
 
@@ -307,7 +322,7 @@ input.check-no:checked + .btn { background: #FF4C4C;}
   /* Lots Page Css Start */
   .admin-box-inner .separator{ border-bottom: solid 1px #E7ECFF;height: 1px; margin: 30px -15px;}
   .custome-check {display: flex; flex-wrap: nowrap;}
-  .custome-check label{font-size: 10px; margin-left: 5px; white-space: nowrap; }
+  .custome-check label{font-size: 11px; margin-left: 3px; white-space: nowrap; }
   .custome-check .form-check{display: flex;  flex-grow: 1; flex-wrap: nowrap;}
  
   @media screen and (max-width:768px) {
@@ -334,8 +349,20 @@ input.check-no:checked + .btn { background: #FF4C4C;}
   /*lots-action*/
 .lots-action .btn{padding: 14px 20px; font-size: 12px;}
 
-   
- 
+/*common-Model*/  
+.common-Model { max-width: 679px;} 
+.common-Model .modal-header{ padding: 50px 48px 25px 48px; position: relative;}
+.common-Model  .modal-footer { padding: 22px 48px 30px;}
+.common-Model .modal-header, .common-Model  .modal-footer{ border: none;}
+.common-Model .modal-title{ color: #000000; font-style: 20px; line-height: 26px; font-weight: 600; }
+
+.common-Model .modal-header .btn-close{ position: absolute; top: 17px; right: 19px; width: 24px;height: 24px;  padding: 10px;
+  background-color: #CCC; border-radius: 100%; box-sizing: border-box; background-size: 8px;}
+
+.common-Model .modal-body{ padding: 25px 48px;}
+.common-Model .modal-body label{ color: #000000;}
+
+
 
 
   /* Responsive css start */
