@@ -4,6 +4,21 @@ $(document).ready(function () {
     $("#sidebar-toggle").fadeToggle();
   });
 
+  //dateOnly
+  $(".dateOnly").datetimepicker({
+    format: "dd/MM/yyyy",
+    autoclose: true,
+    startView: 2,
+    minView: 2,
+    maxView: 3,
+  });
+
+  //dateAndTime
+  $(".dateAndTime").datetimepicker({
+    format: " hh:mm:ss, dd/MM/yyyy",
+    autoclose: true,
+  });
+
   //DataTable
   $("#table_id").DataTable({});
 

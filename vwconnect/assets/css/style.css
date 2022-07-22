@@ -40,8 +40,31 @@ input.form-control{padding: 11px 8px;}
 .input-group .input-group-text{ font-size: 13px;}
 .input-group .bg-gray{ background-color: #BCBEC233;}
 .sub-Title{ font-size: 14px; font-weight: 500; color: #000000;}
+.small-Input input{ border: solid 1px #E0E7FF; background-color: rgba(255,255,255,0.2);width: 60px;text-align: center;font-size: 12px;color: #2E384D; }
+table .fa-ellipsis{ font-size: 20px; color: #A8AEB4;}
+table .dropdown-center.action:hover .fa-ellipsis, table .dropdown-center.action:focus .fa-ellipsis{ color: #FF4C4C;}
 
+table .dropdown-center.action .dropdown-menu{ max-width: 110px; min-width: 110px; box-shadow: 3px 4px 8px #00000024;}
+table .dropdown-center.action .dropdown-menu li{ border-bottom: solid 1px rgba(255,255,255,0.1);}
+table .dropdown-center.action .dropdown-menu li a{ font-size: 12px; padding: 0;}
+table .dropdown-center.action .dropdown-menu li a:hover{ background:none  !important;}
+table .dropdown-center.action .dropdown-menu { padding: 20px;}
 
+table .dropdown-center.action .dropdown-menu::before {
+  content: '';
+  position: absolute;
+  display: block;    
+  width: 0px;        
+  left: 50%;
+  top: 0;
+  border: 7px solid transparent;
+  border-top: 0;
+  border-bottom: 15px solid #ff4c4c;
+  transform: translate(60%, calc(-100% - 0px));
+}
+
+.text-bg-success{background-color:#34BF49  !important;}
+.text-bg-danger{background-color:#FF4C4C  !important;}
 
 /* Button CSS */
 .btn { font-size:14px; border-radius:5px; min-height: 40px;}
@@ -86,7 +109,21 @@ input.form-control{padding: 11px 8px;}
 .main .btn-lg { padding:0.9rem 1rem;}
 .main .form-group .select-user { position: absolute; top: 5px; right: 10px; border-radius: 50px; text-align: center; padding: 5px 9px 2px 8px;}
 .main .form-group .select-user .dropdown-item { font-size:12px;}
+.login-form .select-user{ width: 27px;
+  height: 27px;
+  border-radius: 100% !important;
+  padding: 0 !important;
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3px !important;
+  right: 5px !important;}
 
+  .login-form .select-user:after{
+    content: "";
+    margin-left: 0 !important;
+  }
 
 
 @media screen and (max-width: 450px) {
@@ -348,7 +385,7 @@ input.check-no:checked + .btn { background: #FF4C4C;}
 .tab-content-inner{ border:solid 1px #E7ECFF;  background-color: #F7F5F64A; padding:17px 19px 8px 19px; border-radius: 9px; -webkit-border-radius: 9px; -moz-border-radius: 9px; margin: 8px 0 24px;}
 .tab-content-inner  [class*="col-"]{ margin-bottom: 15px;}
 
-
+.centerBox > div{    margin: auto; height: 17px;width: 18px; padding-left: 22px;}
 
 
   /*lots-action*/
