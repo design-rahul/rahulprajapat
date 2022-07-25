@@ -3,7 +3,12 @@ $(document).ready(function () {
   $("#menu-button").click(function () {
     $("#sidebar-toggle").fadeToggle();
   });
-
+  //DataTable
+  $("#table_id").DataTable({
+    bFilter: false,
+    lengthChange: false,
+    ordering: false,
+  });
   //dateOnly
   $(".dateOnly").datetimepicker({
     format: "dd/MM/yyyy",
@@ -18,9 +23,6 @@ $(document).ready(function () {
     format: " hh:mm:ss, dd/MM/yyyy",
     autoclose: true,
   });
-
-  //DataTable
-  $("#table_id").DataTable({});
 
   //Remove danger btn
   $(".lots-action .btn-danger").hide();
