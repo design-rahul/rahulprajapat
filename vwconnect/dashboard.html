@@ -324,31 +324,37 @@
                 >
               </a>
               <!-- Dropdown - User Information -->
-              <div
+              <ul
                 class="dropdown-menu dropdown-menu-end"
                 aria-labelledby="userDropdown"
               >
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cog fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <div class="dropdown-divider"></div>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  data-toggle="modal"
-                  data-target="#logoutModal"
-                >
-                  <i
-                    class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
-                  ></i>
-                  Logout
-                </a>
-              </div>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-cog fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Settings
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -472,6 +478,38 @@
                     </div>
                   </td>
                 </tr>
+                <tr class="inner-table-data">
+                  <td colspan="8">
+                    <table class="table-inner">
+                      <tbody>
+                        <tr>
+                          <td>Street Address :</td>
+                          <td>940 Goldendale Dr, Wasilla, Alaska 9965</td>
+                        </tr>
+                        <tr>
+                          <td>City :</td>
+                          <td>Wasilla</td>
+                        </tr>
+                        <tr>
+                          <td>State :</td>
+                          <td>Alaska</td>
+                        </tr>
+                        <tr>
+                          <td>Home Phone #1 :</td>
+                          <td>(907) 357-4333</td>
+                        </tr>
+                        <tr>
+                          <td>M.I :</td>
+                          <td>Office</td>
+                        </tr>
+                        <tr>
+                          <td>Terminated Date :</td>
+                          <td>24 May 2022</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
                 <tr>
                   <td scope="row">
                     <span class="badge text-bg-danger">Admin</span>
@@ -520,6 +558,38 @@
                         </li>
                       </ul>
                     </div>
+                  </td>
+                </tr>
+                <tr class="inner-table-data">
+                  <td colspan="8">
+                    <table class="table-inner">
+                      <tbody>
+                        <tr>
+                          <td>Street Address :</td>
+                          <td>940 Goldendale Dr, Wasilla, Alaska 9965</td>
+                        </tr>
+                        <tr>
+                          <td>City :</td>
+                          <td>Wasilla</td>
+                        </tr>
+                        <tr>
+                          <td>State :</td>
+                          <td>Alaska</td>
+                        </tr>
+                        <tr>
+                          <td>Home Phone #1 :</td>
+                          <td>(907) 357-4333</td>
+                        </tr>
+                        <tr>
+                          <td>M.I :</td>
+                          <td>Office</td>
+                        </tr>
+                        <tr>
+                          <td>Terminated Date :</td>
+                          <td>24 May 2022</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
                 <tr>
@@ -2247,10 +2317,16 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div
+        class="
+          modal-dialog
+          common-Model
+          confirmation-model
+          modal-dialog-centered
+        "
+      >
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <div class="modal-header p-0">
             <button
               type="button"
               class="btn-close"
@@ -2258,16 +2334,25 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
+          <div class="modal-body pb-0">
+            <h4 class="text-center">
+              <i class="fa-solid fa-trash-can trash-can"></i>
+            </h4>
+            <div class="text-center message-txt">
+              Are you sure you want to remove this record from the table ?
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center px-0 pt-0">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-danger btn-lg mx-3"
               data-bs-dismiss="modal"
             >
-              Close
+              Yes, Delete it !
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg">
+              Whoops! Go Back
+            </button>
           </div>
         </div>
       </div>

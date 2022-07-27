@@ -24,6 +24,9 @@ a:hover { color:#EB0D0D;}
 .form-check-input[type*="checkbox"]:checked {background-color: #FF4C4C;border-color: #FF4C4C;}
 .form-check-label{ font-size: 13px;}
 
+.form-select {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.545' height='22' viewBox='0 0 23.545 22'%3E%3Cg id='Dropdown' transform='translate(-3985.831 -9207.5)'%3E%3Cpath id='vectorMask' d='M1197.088,2119.511l-.37-.361a.532.532,0,0,0-.74,0l-3.858,3.766-3.856-3.766a.532.532,0,0,0-.74,0l-.37.361a.5.5,0,0,0,0,.723l4.6,4.489a.532.532,0,0,0,.74,0l4.6-4.489A.5.5,0,0,0,1197.088,2119.511Z' transform='translate(2812.134 7096)' fill='%232e384d'/%3E%3Cline id='Line_68' data-name='Line 68' y2='22' transform='translate(3986.331 9207.5)' fill='none' stroke='%23e0e7ff' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: 23px 30px;}
+
 /*common css*/
 .italic-txt{font-style: italic; font-weight: 100; font-style: 13px;}
 .text-danger{color: #FF4C4C!important;}
@@ -85,7 +88,7 @@ table .dropdown-center.action .dropdown-menu::before {
 .text-bg-danger{background-color:#FF4C4C  !important;}
 
 /* Button CSS */
-.btn { font-size:14px; border-radius:5px; min-height: 40px;}
+.btn { font-size:14px; border-radius:5px; min-height: 40px;     font-weight: 500;}
 .btn-danger { background:#FF4C4C; border-color:#FF4C4C; }
 .btn-outline-success{border-color:#34BF49; color: #34BF49;}
 .btn-outline-success:hover { background:#34BF49; border-color:#34BF49; }
@@ -94,11 +97,14 @@ table .dropdown-center.action .dropdown-menu::before {
 .btn-link { color:#F2134F; text-decoration:none; font-size:12px;}
 .btn-success { background-color:#34BF49; border-color:#34BF49;}
 .btn.btn-success:hover { background-color:#23af38; border-color:#23af38;}
-
+.btn-outline-secondary{ border-color: #DCE0E4; color: #595252;}
+*[class*="btn-outline-"]{ border-width: 2px;     font-weight: 500; font-size: 13px;}
+.message-txt{ margin: 31px; color: #000000; font-size: 17px; font-weight: 500;}
 /* Button Sizes  */
 
 
 /* Form css */
+.admin-menu{ float: left; width: 100%; }
 .form-control:not(textarea), .form-select{ height: 40px; }
 .radio-group { display: flex; background-color: rgb(255 255 255 / 20%); color: #2e384d; border: 1px solid #E0E7FF; height: 40px; padding: 8px; border-radius: 4px; }
 .radio-group .form-check { margin: 0 8px 0px 0; display: inline-flex; align-items: center; }
@@ -109,7 +115,7 @@ table .dropdown-center.action .dropdown-menu::before {
 .dropdown-item.active, .dropdown-item:active { background:#C40000;}
 
 /* Table  */
-.table-line > tbody > tr:nth-of-type(odd) > * { background:#F6F6F6;}
+.table-line > tbody > tr:nth-of-type(even) > * { background:#F6F6F6;}
 
 /* Login Page CSS */
 
@@ -230,7 +236,7 @@ nav.topbar .greeting-text span{ color: #7C828A;}
 .page-wrapper #content-wrapper .navbar .nav-item.dropdown .dropdown-menu .dropdown-title{ font-size: 16px; color: #000000; font-weight: 500; padding: 15px 15px 12px; margin: -20px -28px  12px; border-bottom: solid 1px rgba(112,112,122,0.08); }
 .page-wrapper #content-wrapper .navbar .nav-item.dropdown .dropdown-menu li{ padding: 12px 0; position: relative; border-bottom: solid 1px rgba(112,112,122,0.08); }
 .page-wrapper #content-wrapper .navbar .nav-item.dropdown .dropdown-menu li a{ padding: 0; line-height: 16px; 
-  font-size: 11px; color: #1C1D20;white-space: break-spaces;}
+  font-size: 11px; color: #1C1D20; white-space: normal;}
   .page-wrapper #content-wrapper .navbar .nav-item.dropdown .dropdown-menu li span{ font-size: 8px; opacity: 0.33; display: block; width: 100%; line-height: 10px; margin-top: -2px;}
 .page-wrapper #content-wrapper .navbar .nav-item.dropdown .dropdown-menu li a:hover{ background-color: transparent;}
 .page-wrapper #content-wrapper .navbar .nav-item.dropdown .dropdown-menu li::before{
@@ -375,7 +381,7 @@ ul.subnav.dropdown-menu.show { animation-name: example; animation-duration: 0.1s
 .page-body .employee-list .dataTables_wrapper .dataTables_paginate .paginate_button {  background-color: #F5F5F5; border-radius: 4px !important; min-width: 24px;     margin: 0 5px; border: none; padding:6px 9px;  font-size: 10px; font-weight: 500;}
 .page-body .employee-list .dataTables_wrapper .dataTables_paginate .paginate_button:last-of-type{ margin-right:0 ;}
 .page-body .employee-list .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
-.page-body .employee-list .dataTables_wrapper .dataTables_paginate .paginate_button:hover { background:#6E6E6E; color:#fff !important; 
+.page-body .employee-list .dataTables_wrapper .dataTables_paginate .paginate_button:hover { border: none; background:#6E6E6E; color:#fff !important; 
   border-radius: 4px;}
 .dataTables_info, .dataTables_paginate{ padding:0 !important; margin: 0 !important;}
 .dataTable.no-footer{ margin-bottom: 28px; overflow: hidden;}
@@ -429,9 +435,15 @@ ul.subnav.dropdown-menu.show { animation-name: example; animation-duration: 0.1s
 .page-body .employee-list tr:last-child td:last-child{ border-bottom-right-radius: 11px;} 
 
 
-.page-body .employee-list .table > :not(caption) > * > * { border-color: #E0E7FF;}
+.page-body .employee-list .table > :not(caption) > * > * { border-color: #EFF2FE;}
 
-.trash-can { padding: 30px; background: rgb(255 76 76 / 15%); color: #FF4C4C; border-radius: 100%; font-size: 30px; }
+.trash-can { padding: 30px; background: rgb(255 76 76 / 15%); color: #FF4C4C; border-radius: 100%; font-size: 30px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px auto 0; }
 
 
 @media screen and (min-width:768px) {
@@ -482,7 +494,7 @@ a.text-blue { color: #0AAEFF; font-size: 11px; font-weight: 500; }
 .list-inline li:after { content: '|'; margin: 0 8px; }
 .list-inline li:last-child:after { content: none; }
 .table-outline th {font-size: 11px;font-weight: 500;vertical-align: super;background: #E0E7FF;/* padding: 10px 0; *//* text-align: center; */}
-.table-outline td {font-size: 12px;color: #707070;padding: 6px;white-space: nowrap;}
+.table-outline td {font-size: 12px;color: #707070;padding:9px;white-space: nowrap;}
 .btn.radio-outline {border-color: #E0E7FF;font-size: 8px;/* border-radius: 3px; */padding: 5px 12px;/* line-height: 8px; */min-height: initial;}
 input.check-yes:checked + .btn , input.check-no:checked + .btn {border:0; color: #fff; border-radius: 3px;}
 input.check-yes:checked + .btn { background: #0099E5;}
@@ -493,7 +505,7 @@ input.check-no:checked + .btn { background: #FF4C4C;}
 .table-striped.table-red > tbody > tr:nth-of-type(even) > * { --bs-table-accent-bg: #FEDBDC !important; }
 .table-responsive.table-outline { border-radius: 9px; border: 1px solid #E7ECFF; margin-top: 25px; overflow: auto; }
 .table-red th { background: #ff4c4c; color: #fff; }
-
+.rotate-icon i{transform: rotate(20deg);}
 .dropdown-item.lot-info { margin: 0; }
 .lot-count .dropdown-menu { background: #ff4c4c; padding:0; position: relative; }
 /* .lot-count .dropdown-menu:before { content: ''; width: 20px; height: 20px; background: #ff4c4c; z-index: 1; position: absolute; top: -9px; left: 20px; transform: rotate(45deg); } */
@@ -528,7 +540,8 @@ input.check-no:checked + .btn { background: #FF4C4C;}
 
 
   /* breadcrumb */
-  nav[aria-label="breadcrumb"] { float: left; width: 100%;}
+  nav[aria-label="breadcrumb"] { float: left; width: 100%; }
+  nav[aria-label="breadcrumb"] .breadcrumb{margin-bottom: 0;}
   nav[aria-label="breadcrumb"] li, nav[aria-label="breadcrumb"] li a{font-size: 13px; color: #6c757d; }
   nav[aria-label="breadcrumb"]  .breadcrumb-item + .breadcrumb-item {padding-left: 3px;}
   nav[aria-label="breadcrumb"] li::before{content: ">" !important; padding-right: 2px !important;}
@@ -549,16 +562,17 @@ input.check-no:checked + .btn { background: #FF4C4C;}
 
 
   /*lots-action*/
-.lots-action .btn{padding: 14px 20px; font-size: 12px;}
+.lots-action .btn{ padding: 13px 20px;  font-size: 13px;  min-width: 106px;  font-weight: 500;}
 
 /*common-Model*/    
+.confirmation-model.common-Model { max-width: 457px;} 
 .common-Model { max-width: 679px;} 
 .common-Model .modal-header{ padding: 50px 48px 25px 48px; position: relative;}
 .common-Model  .modal-footer { padding: 22px 48px 30px;}
 .common-Model .modal-header, .common-Model  .modal-footer{ border: none;}
 .common-Model .modal-title{ color: #000000; font-style: 20px; line-height: 26px; font-weight: 600; }
 
-.common-Model .modal-header .btn-close{ position: absolute; top: 17px; right: 19px; width: 24px;height: 24px;  padding: 10px;
+.common-Model .modal-header .btn-close{ position: absolute;     z-index: 5; top: 17px; right: 19px; width: 24px;height: 24px;  padding: 10px;
   background-color: #CCC; border-radius: 100%; box-sizing: border-box; background-size: 8px;}
 
 .common-Model .modal-body{ padding: 25px 48px;}
@@ -569,6 +583,13 @@ input.check-no:checked + .btn { background: #FF4C4C;}
 
 .input-group.left-side-icon .form-control{ border-left: none;}
 .input-group.left-side-icon .input-group-text{border-right: none;}
+
+/*table-inner*/
+.page-body .employee-list .inner-table-data > td {padding: 0 ;}
+.table-inner{ width: 100%; background-color: #FFF;}
+.table-inner tr:nth-child(odd){ background: #F8F8FE;}
+.page-body .employee-list  .table-inner td{ text-align: left; font-size: 13px; padding: 6px;}
+.table-inner td:first-child{ max-width: 30px;}
 
   /* Responsive css start */
 @media screen and (max-width:960px){

@@ -40,4 +40,7 @@ $(document).ready(function () {
       $(".lots-action .btn-danger").show();
     }
   });
+
+  var allTr = $(".employee-list table tr");
+  alert();
 });
