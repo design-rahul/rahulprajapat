@@ -1,14 +1,15 @@
 $(document).ready(function () {
-  //menu-button for sidebar-toggle
-  $("#menu-button").click(function () {
-    $("#sidebar-toggle").fadeToggle();
-  });
   //DataTable
   $("#table_id").DataTable({
     bFilter: false,
     lengthChange: false,
     ordering: false,
   });
+  //menu-button for sidebar-toggle
+  $("#menu-button").click(function () {
+    $("#sidebar-toggle").fadeToggle();
+  });
+
   //dateOnly
   $(".dateOnly").datetimepicker({
     format: "dd/MM/yyyy",
@@ -41,6 +42,19 @@ $(document).ready(function () {
     }
   });
 
-  var allTr = $(".employee-list table tr");
-  alert();
+  var allTr = $(".employee-list table .child-data");
+  console.log(allTr);
+  $(allTr).each(function () {
+    $(this)
+      .find(".edit")
+      .click(function () {
+        $("tr.inner-table-data").removeClass("on");
+        $(this).parents().next().addClass("on");
+      });
+    $(this)
+      .find(".minimize")
+      .click(function () {
+        $(this).parents().next().removeClass("on");
+      });
+  });
 });

@@ -428,7 +428,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr class="child-data">
                   <td scope="row">
                     <span class="badge text-bg-primary">Home</span>
                   </td>
@@ -454,12 +454,16 @@
                         aria-labelledby="dropdownMenuButton1"
                       >
                         <li>
-                          <a class="dropdown-item" href="#"
+                          <a
+                            class="dropdown-item minimize"
+                            href="javascript:void(0)"
                             ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#"
+                          <a
+                            class="dropdown-item edit"
+                            href="javascript:void(0)"
                             ><i class="fa-solid fa-pen pe-2"></i>Edit</a
                           >
                         </li>
@@ -509,8 +513,15 @@
                       </tbody>
                     </table>
                   </td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
                 </tr>
-                <tr>
+                <tr class="child-data">
                   <td scope="row">
                     <span class="badge text-bg-danger">Admin</span>
                   </td>
@@ -536,12 +547,16 @@
                         aria-labelledby="dropdownMenuButton1"
                       >
                         <li>
-                          <a class="dropdown-item" href="#"
+                          <a
+                            class="dropdown-item minimize"
+                            href="javascript:void(0)"
                             ><i class="fa-regular fa-eye pe-2"></i>Minimize</a
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#"
+                          <a
+                            class="dropdown-item edit"
+                            href="javascript:void(0)"
                             ><i class="fa-solid fa-pen pe-2"></i>Edit</a
                           >
                         </li>
@@ -591,6 +606,13 @@
                       </tbody>
                     </table>
                   </td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
+                  <td class="hide"></td>
                 </tr>
                 <tr>
                   <td scope="row">
@@ -2264,50 +2286,6 @@
         </div>
       </div>
     </div>
-    <!-- Modal  -->
-
-    <!-- <div
-         class="modal fade"
-         id="exampleModal"
-         tabindex="-1"
-         aria-labelledby="exampleModalLabel"
-         aria-hidden="true"
-         >
-         <div class="modal-dialog modal-dialog-centered">
-           <div class="modal-content">
-             <div class="modal-header border-0">
-               <button
-                 type="button"
-                 class="btn-close"
-                 data-bs-dismiss="modal"
-                 aria-label="Close"
-               ></button>
-             </div>
-             <h4 class="text-center">
-               <i class="fa-solid fa-trash-can trash-can"></i>
-             </h4>
-             <div class="modal-body">
-               <h5 class="text-center">
-                 Are you sure you want to remove this record from the table ?
-               </h5>
-             </div>
-             <div class="modal-footer justify-content-center">
-               <button type="button" class="btn btn-danger">
-                 Yes, Delete it !
-               </button>
-               <button
-                 type="button"
-                 class="btn btn-outline-secondary"
-                 data-bs-dismiss="modal"
-               >
-                 Go Back
-               </button>
-             </div>
-           </div>
-         </div>
-         </div> -->
-    <!-- Modal -->
-    <!-- Button trigger modal -->
 
     <!-- Modal -->
     <div
@@ -2357,19 +2335,12 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/bootstrap.bundle.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"
-    ></script>
-    <!-- <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script> -->
-    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
+
     <script src="assets/js/bootstrap-datetimepicker.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

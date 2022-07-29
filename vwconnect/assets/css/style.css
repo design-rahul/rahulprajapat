@@ -521,7 +521,8 @@ input.check-no:checked + .btn { background: #FF4C4C;}
   *::-webkit-scrollbar-thumb { background-color: #0099e5; border-radius: 10px; border: 0px solid #ffffff; }
 
 /* Change lots community css */
-  .community {background: rgb(247 245 246 / 30%);padding: 32px;border: 1px solid #E7ECFF;border-radius: 9px;margin-top: 25px;}
+  .community {background: rgb(247 245 246 / 30%);padding: 32px;border: 1px solid #E7ECFF;border-radius: 9px;
+  float: left; width: 100%;}
   .form-label { font-size: 12px; color: #8C98A9; }
   .community-step p { font-size: 13px; color: #000; font-weight: 500; font-family:'EuclidFlex', sans-serif; }
   .community-step .italic { font-style: italic; font-weight: 500;}
@@ -585,11 +586,17 @@ input.check-no:checked + .btn { background: #FF4C4C;}
 .input-group.left-side-icon .input-group-text{border-right: none;}
 
 /*table-inner*/
+.page-body .employee-list .inner-table-data .table-inner{ display: none;}
+.page-body .employee-list .inner-table-data.on .table-inner{ display: inline-table;}
 .page-body .employee-list .inner-table-data > td {padding: 0 ;}
 .table-inner{ width: 100%; background-color: #FFF;}
 .table-inner tr:nth-child(odd){ background: #F8F8FE;}
 .page-body .employee-list  .table-inner td{ text-align: left; font-size: 13px; padding: 6px;}
+.page-body .employee-list  .table-inner tr:last-child td{ border-radius: 0;}
 .table-inner td:first-child{ max-width: 30px;}
+.table-inner td.hide{ display: none;}
+
+
 
   /* Responsive css start */
 @media screen and (max-width:960px){
